@@ -10,18 +10,38 @@
     <title>Hello, world!</title>
   </head>
   <body class="container">
-    <h1 id="heading">FRONT END</h1>
-    <button id="homeBtn" type="button" class="btn btn-dark rounded mr-20px">Home</button>
-    <button id="adminBtn" type="button" class="btn btn-dark rounded mr-20px">Admin</button>
+
+    <h1 class="jumbotron" id="heading">FRONT END</h1>
+    <div class="mb-3">
+      <button id="homeBtn" type="button" class="btn btn-light rounded mr-20px">Home</button>
+      <button id="adminBtn" type="button" class="btn btn-light rounded mr-20px">Admin</button>
+    </div>
+
     <div id="homePage" class="">
-      <button id="loginBtn" type="button" class="btn btn-dark rounded mr-20px">Login</button>
-      <button id="logoutBtn" type="button" class="btn btn-dark rounded mr-20px">Logout</button>
-      <button id="registerBtn" type="button" class="btn btn-dark rounded mr-20px">Register</button>
+      <button id="viewProductBtn" type="button" class="btn btn-dark rounded mr-20px">View Product</button>
       <button id="viewUserBtn" type="button" class="btn btn-dark rounded mr-20px">View User</button>
+      <div id="productCards" class="">
+
+      </div>
     </div>
 
     <div id="adminPage" class="">
+      <div class="">
+        <button id="loginBtn" type="button" class="btn btn-dark rounded mr-20px">Login</button>
+        <button id="logoutBtn" type="button" class="btn btn-dark rounded mr-20px">Logout</button>
+        <button id="registerBtn" type="button" class="btn btn-dark rounded mr-20px">Register</button>
 
+      </div>
+
+      <form id="loginForm">
+        <!-- login form -->
+        <label for="username">Username: </label>
+        <input type="text" id="username" name="username" class="form-control" value="username">
+        <label for="username">Password: </label>
+        <input type="password" id="password" name="password" class="form-control" value="password">
+        <button id="submitBtn" type="submit" name="button" class="btn btn-dark ">Submit</button>
+
+      </form>
     </div>
 
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
